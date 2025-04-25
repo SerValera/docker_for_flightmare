@@ -187,6 +187,7 @@ On Ubuntu 20.04, replace `python-vcstool` with `python3-vcstool`:
 sudo apt-get install libgoogle-glog-dev protobuf-compiler ros-noetic-octomap-msgs ros-noetic-octomap-ros ros-noetic-joy python3-vcstool
 sudo apt-get install python3-pip
 sudo pip install catkin-tools
+sudo pip install rospkg
 ```
 
 ```bash
@@ -244,6 +245,14 @@ pip install catkin-pkg
 pip install PyYAML
 pip uninstall empy
 pip install empy==3.3.2
+pip install PyQt5==5.10.1
+pip install defusedxml
+pip install PySide2
+```
+
+```bash
+sudo apt-get purge ros-galactic-rqt-reconfigure
+sudo apt-get install ros-galactic-rqt-reconfigure
 ```
 
 ## 21. Fix Issues Using the Following Instruction
