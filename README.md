@@ -260,7 +260,7 @@ Add the following lines:
 ```cpp
 #ifndef MAVLINK_H
   typedef mavlink::mavlink_message_t mavlink_message_t;
-  typedef mavlink::mavlink_status_t mavlink_status_t;
+  typedef mavlink::mavlink_status_t mavlink_status_t; // add this line
   #include <mavlink/v2.0/common/mavlink.h>
 #endif
 ```
