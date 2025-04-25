@@ -54,7 +54,7 @@ RUN if [[ -z "${USE_NVIDIA}" ]] ;\
 # Add sourcing of your catkin workspace and FLIGHTMARE_PATH environment variable to your .bashrc file:
 RUN echo "source ~/workspace/catkin_ws/devel/setup.bash --extend" >> ~/.bashrc >> ~/.bashrc && \
     echo "source /opt/ros/noetic/setup.bash --extend" >> ~/.bashrc && \
-    echo "export FLIGHTMARE_PATH=~/home/sim/flightmare" >> ~/.bashrc
+    echo "export FLIGHTMARE_PATH=~/flightmare" >> ~/.bashrc
 
 
     
