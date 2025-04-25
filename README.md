@@ -1,6 +1,21 @@
 
 # Docker Manual for **FLIGHTMARE** Installation Using ROS in Docker
 
+
+### Source Code  
+[Flightmare GitHub Repository](https://github.com/uzh-rpg/flightmare)
+
+### Citation  
+
+```bibtex
+@inproceedings{song2020flightmare,
+    title={Flightmare: A Flexible Quadrotor Simulator},
+    author={Song, Yunlong and Naji, Selim and Kaufmann, Elia and Loquercio, Antonio and Scaramuzza, Davide},
+    booktitle={Conference on Robot Learning},
+    year={2020}
+}
+```
+
 ## 1. Clone the Repository
 
 ```bash
