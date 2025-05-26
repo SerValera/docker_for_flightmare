@@ -205,13 +205,6 @@ sudo pip install catkin-tools
 sudo pip install rospkg
 ```
 
-```bash
-cd workspace
-mkdir -p catkin_ws/src
-cd ..
-catkin config --init --mkdirs --extend /opt/ros/noetic --merge-devel --cmake-args -DCMAKE_BUILD_TYPE=Release
-```
-
 ## 19. Update YAML File at `flightmare/flightros/dependencies.yaml`
 
 ```yaml
@@ -247,7 +240,10 @@ repositories:
 ```
 
 ```bash
-cd
+cd workspace
+mkdir -p catkin_ws/src
+cd src
+catkin config --init --mkdirs --extend /opt/ros/noetic --merge-devel --cmake-args -DCMAKE_BUILD_TYPE=Release
 vcs-import < ~/workspace/catkin_ws/src/flightmare/flightros/dependencies.yaml
 ```
 
@@ -266,8 +262,8 @@ pip install PySide2
 ```
 
 ```bash
-sudo apt-get purge ros-galactic-rqt-reconfigure
-sudo apt-get install ros-galactic-rqt-reconfigure
+sudo apt-get purge ros-noetic-rqt-reconfigure
+sudo apt-get install ros-noetic-rqt-reconfigure
 ```
 
 ## 21. Fix Issues Using the Following Instruction
