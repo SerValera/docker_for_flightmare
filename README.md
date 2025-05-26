@@ -247,7 +247,12 @@ catkin config --init --mkdirs --extend /opt/ros/noetic --merge-devel --cmake-arg
 vcs-import < ~/workspace/catkin_ws/src/flightmare/flightros/dependencies.yaml
 ```
 
-## 20. Install Additional Packages
+```bash
+cd workspace/catkin_ws/src
+git clone https://github.com/uzh-rpg/flightmare.git
+```
+
+## 20. Install Additional Packages (line by line)
 
 ```bash
 conda activate ENVNAME37
@@ -271,7 +276,7 @@ sudo apt-get install ros-noetic-rqt-reconfigure
 (Source: https://github.com/ethz-asl/rotors_simulator/issues/737)
 
 ```bash
-cd ~/workspace/catkin_ws/src/flightmare/flightros/rotors_simulator/rotors_hil_interface/include/rotors_hil_interface
+cd ~/workspace/catkin_ws/src/rotors_simulator/rotors_hil_interface/include/rotors_hil_interface
 sudo nano hil_interface.h
 ```
 
